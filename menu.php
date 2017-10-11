@@ -105,6 +105,7 @@
                 
             </div>
         </header>
+
         <!--sidebar left start-->
         <aside class="sidebar">
             <div id="leftside-navigation" class="nano">
@@ -194,7 +195,7 @@
 
                         </ul>
                     </li>
-                    <?php } ?>
+                    
                        <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-building-o"></i><span>Contratos</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                         <ul>
@@ -213,7 +214,104 @@
                         <a href="#"><i class="fa fa-clipboard"></i><span>Informes</span></a>
                     </li>
 
-                   
+                   <?php } ?>
+
+
+            <?php if($_SESSION['tipo_usuario']==2) { ?>                            
+                        
+                    
+            <?php } ?>
+
+
+
+            <?php if($_SESSION['tipo_usuario']==3) { ?>
+
+            <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-sitemap"></i><span>Sucursales</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="#">Crear</a>
+                            </li>
+                            <li><a href="#">Actualizar</a>
+                            </li>
+                            <li><a href="#">Consultar</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-users"></i><span>Empledos</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="#">Crear</a>
+                            </li>
+                            <li><a href="#">Actualizar</a>
+                            </li>
+                            <li><a href="#">Consultar</a>
+                            </li>
+                        </ul>
+                    </li>                         
+   
+                    
+            <?php } ?>
+
+
+
+
+
+            <?php if($_SESSION['tipo_usuario']==4) { ?>
+
+
+                   <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-building-o"></i><span>Contratos</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="#">Crear</a>
+                            </li>
+                            <li><a href="#">Actualizar</a>
+                            </li>
+                            <li><a href="#">Consultar</a>
+                            </li>
+
+
+                        </ul>
+                    </li>                            
+                        
+                    
+            <?php } ?>
+
+
+
+            <?php if($_SESSION['tipo_usuario']==5) { ?>                            
+                        
+
+                   <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-building-o"></i><span>Selecciones</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="#">Crear</a>
+                            </li>
+                            <li><a href="#">Actualizar</a>
+                            </li>
+                            <li><a href="#">Consultar</a>
+                            </li>
+
+
+                        </ul>
+                    </li> 
+                    
+            <?php } ?>
+
+
+             <?php if($_SESSION['tipo_usuario']==6) { ?>                            
+                        
+
+                    
+            <?php } ?>
+
+
+
+
+
+
+
 
                 </ul>
             </div>
@@ -226,6 +324,7 @@
             <section id="main-content">
 
 
+                <!--Contenido de la pagina-->
 
                 <div class="panel-group hide" id="contenido">
                 
