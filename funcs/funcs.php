@@ -133,7 +133,7 @@
 		$mail->Username = 'etovarpruebas@gmail.com'; //Modificar
 		$mail->Password = 'L1t0+2017'; //Modificar
 		
-		$mail->setFrom('etovarpruebas@gmail.com', 'etovar1989@gmail.com'); //Modificar
+		$mail->setFrom('etovarpruebas@gmail.com', 'etovarpruebas@gmail.com'); //Modificar
 		$mail->addAddress($email, $nombre);
 		
 		$mail->Subject = $asunto;
